@@ -7,6 +7,7 @@ Color subBlackColor = Color(0xffA5ADAF);
 Color verificationTextColor = Color(0xff5E6F74);
 Color starColor = Color(0xffFFB200);
 Color subPrimaryColor = Color(0xffEBF4FA);
+Color whiteColor = Color(0xffffffff);
 
 TextStyle primaryTextStyle = GoogleFonts.openSans(
   color: primaryColor
@@ -26,6 +27,10 @@ TextStyle verificationTextStyle = GoogleFonts.openSans(
 
 TextStyle subPrimaryTextStyle = GoogleFonts.openSans(
   color: subPrimaryColor
+);
+
+TextStyle whiteTextStyle = GoogleFonts.openSans(
+  color: whiteColor
 );
 
 FontWeight reguler = FontWeight.w400;
