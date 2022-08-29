@@ -20,11 +20,6 @@ class OnBoardingPage extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    Text('Find your dream home only here', style: whiteTextStyle.copyWith(
-                      fontSize: 14,
-                      fontWeight: semiBold,
-                      wordSpacing: 2
-                    ),),
                   ],
                 )
               ),
@@ -69,7 +64,9 @@ class OnBoardingPage extends StatelessWidget {
                               color: primaryColor
                             ),
                             child: TextButton(
-                              onPressed: (){}, 
+                              onPressed: (){
+                                Navigator.pushNamed(context, '/login-page');
+                              }, 
                               child: Text('Login', style: whiteTextStyle.copyWith(
                                 fontSize: 14,
                                 fontWeight: semiBold,
