@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:homestay_app/template.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  @override
+
+  bool currentIndex = true;
+
   Widget build(BuildContext context) {
     Widget email() {
       return Container(
@@ -97,9 +105,19 @@ class LoginPage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Image.asset(
-                  'assets/icons/icon-check-hidden.png',
-                  width: 24,
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      currentIndex = !currentIndex;
+                    });
+                  },
+                  child: currentIndex ? Image.asset(
+                    'assets/icons/icon-check-active.png',
+                    width: 24,
+                  ) : Image.asset(
+                    'assets/icons/icon-check-hidden.png',
+                    width: 24,
+                  ),
                 ),
                 SizedBox(
                   width: 8,
@@ -132,7 +150,7 @@ class LoginPage extends StatelessWidget {
               borderRadius: BorderRadius.circular(24), color: primaryColor),
           child: TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/login-page');
+                Navigator.pushNamed(context, '/verification-page');
               },
               child: Text(
                 'Login',
