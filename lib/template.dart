@@ -8,6 +8,7 @@ Color verificationTextColor = Color(0xff5E6F74);
 Color starColor = Color(0xffFFB200);
 Color subPrimaryColor = Color(0xffEBF4FA);
 Color whiteColor = Color(0xffffffff);
+Color whiteColor2 = Color(0xffFCFCFC);
 
 TextStyle primaryTextStyle = GoogleFonts.openSans(
   color: primaryColor
