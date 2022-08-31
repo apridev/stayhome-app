@@ -112,10 +112,10 @@ class _LoginPageState extends State<LoginPage> {
                     });
                   },
                   child: currentIndex ? Image.asset(
-                    'assets/icons/icon-check-active.png',
+                    'assets/icons/icon-check-hidden.png',
                     width: 24,
                   ) : Image.asset(
-                    'assets/icons/icon-check-hidden.png',
+                    'assets/icons/icon-check-active.png',
                     width: 24,
                   ),
                 ),
