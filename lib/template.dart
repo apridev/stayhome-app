@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+double defaultMargin = 30.0;
+
 Color primaryColor = Color(0xff3792D6);
 Color blackColor = Color(0xff132C33);
 Color subBlackColor = Color(0xffA5ADAF);
@@ -37,6 +39,11 @@ TextStyle subPrimaryTextStyle2 = GoogleFonts.openSans(
 
 TextStyle whiteTextStyle = GoogleFonts.openSans(
   color: whiteColor
+);
+
+
+TextStyle whiteTextStyle2 = GoogleFonts.openSans(
+  color: whiteColor2
 );
 
 FontWeight reguler = FontWeight.w400;
