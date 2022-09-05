@@ -82,6 +82,7 @@ class VerificationPage extends StatelessWidget {
                             ],
                           ),
                         ),
+
                         SizedBox(
                           height: 68,
                           width: 64,
@@ -123,6 +124,7 @@ class VerificationPage extends StatelessWidget {
                       ],
                     ),
                   )),
+                  // !bts 
                   Container(
                     margin: EdgeInsets.only(top: 30, left: 20, right: 20),
                     width: double.infinity,
