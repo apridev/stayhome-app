@@ -155,7 +155,7 @@ class HomePage extends StatelessWidget {
       return SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Container(
-          margin: EdgeInsets.only(right: 20),
+          margin: EdgeInsets.only(right: 20, bottom: 10),
           child: Row(
             children: [
               PopularPageHomeTile(
@@ -246,6 +246,12 @@ class HomePage extends StatelessWidget {
                         nameLocation: 'The Sankara Garden II',
                         location: 'Semarang, Indonesia',
                         price: 512
+                    ),
+                    FeaturedListing(
+                        images: 'assets/imgs/product-1.png',
+                        nameLocation: 'Ina Guest House',
+                        location: 'Bantul, Indonesia',
+                        price: 599
                     ),
                   ],
                 ),
