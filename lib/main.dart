@@ -7,6 +7,7 @@ import 'package:homestay_app/home/setting-page.dart';
 import 'package:homestay_app/onboarding-page.dart';
 import 'package:homestay_app/page/detail-page.dart';
 import 'package:homestay_app/page/login-page.dart';
+import 'package:homestay_app/page/payment-detail.dart';
 import 'package:homestay_app/page/verification-page.dart';
 
 void main() {
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/chat-page' :(context) => ChatPage(),
         '/setting-page' :(context) => SettingPage(),
         '/detail-product-page' :(context) => DetailProductPage(),
+        '/payment-detail' :(context) => PaymentDetail(),
       },
     );
   }
