@@ -224,15 +224,32 @@ class DetailProductPage extends StatelessWidget {
               child: Image.asset('assets/imgs/facility-4.png', width: 50, fit: BoxFit.cover,
               )
             ),
-            Container(
-              width: 50,
-              height: 50,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/imgs/facility-5.png',)
+            Stack(
+              children: 
+                [ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.asset('assets/imgs/facility-5.png', width: 50, fit: BoxFit.cover,
+                  )
                 ),
-                borderRadius: BorderRadius.circular(12),
-              ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: blackColor.withOpacity(0.5)
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('+5', style: whiteTextStyle.copyWith(
+                        fontSize: 16,
+                        fontWeight: semiBold,
+                        letterSpacing: 2
+                      ),),
+                    ],
+                  ),
+                )
+              ],
             ),
           ],
         ),
@@ -310,9 +327,11 @@ class DetailProductPage extends StatelessWidget {
                     color: primaryColor,
                     borderRadius: BorderRadius.circular(24)),
                 child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/payment-detail');
+                    },
                     child: Text(
-                      'Rent',
+                      'Check in',
                       style: whiteTextStyle.copyWith(
                           fontSize: 14, fontWeight: semiBold),
                     )),
